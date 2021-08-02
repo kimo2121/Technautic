@@ -8,11 +8,13 @@ function Createitem() {
     <div className="createItemPage">
       <NavBarFlatItems CreateSingle />
       <div className="top-create-header">
-        <div className="">
-          <Link className="back-to-home-btn">Back to Home</Link>
+        <div className="home-link-btn">
+          <Link to="/" className="back-to-home-btn">
+            Back to Home
+          </Link>
         </div>
         <div className="create-items-links">
-          <Link href="#"> Home </Link>
+          <Link to="/"> Home </Link>
           <span>
             <RightArrow style={{ width: "10px", fill: "#37afe7" }} />
           </span>
