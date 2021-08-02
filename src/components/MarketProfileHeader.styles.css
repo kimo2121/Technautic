@@ -1,0 +1,48 @@
+.chain-container {
+    max-width: 1210px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.market-profile-header {
+    background: red;
+}
+
+.profile-header {
+    background: url(../pages/assets/images/profile-header-bg.2aa21cd1.png);
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 40px;
+    text-align: right;
+    padding: 80px 20px 90px;
+}
+
+.profile-header a {
+    text-align: center;
+    display: block;
+    color: #fff;
+    font-family: "Segoe UI";
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    background: #37b6ff;
+    padding: 10px 40px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 480px) {
+    .profile-header a {
+        display: inline-block;
+    }
+}
+
+@media only screen and (min-width: 1264px) {
+    .profile-header {
+        margin-left: -20px;
+        padding-top: 40px;
+        padding-bottom: 90px;
+    }
+}

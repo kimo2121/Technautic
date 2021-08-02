@@ -1,0 +1,77 @@
+@media only screen and (min-width: 1264px) {
+  .outer {
+    padding-left: 200px;
+    position: relative;
+  }
+}
+
+.clearfix:after {
+  content: "&nbsp;";
+  font-size: 0;
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  display: inline-block;
+  display: block;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+
+.chain-container {
+  max-width: 1210px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.tab_container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.tab_container input {
+  display: none;
+}
+
+.tab_container .tab-content h3,
+.tab_container .tab-content p {
+  -webkit-animation: fadeInScale 0.7s ease-in-out;
+  animation: fadeInScale 0.7s ease-in-out;
+}
+
+.tab_container .tab-content h3 {
+  text-align: center;
+}
+
+.tab_container [id^="tab"]:checked + label {
+  background: #fff;
+  box-shadow: inset 0 3px #0ce;
+}
+
+.tab_container [id^="tab"]:checked + label .fa {
+  color: #0ce;
+}
+
+@media only screen and (max-width: 768px) {
+  .tab_container {
+    width: 98%;
+  }
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4,
+#tab5:checked ~ #content5 {
+  display: block;
+  padding: 20px;
+  background: #fff;
+  color: #999;
+  border-bottom: 2px solid #f0f0f0;
+}

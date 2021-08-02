@@ -1,0 +1,47 @@
+.item-card .opening-dots {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.opening-dots {
+    cursor: pointer;
+    position: relative;
+}
+
+.opening-dots .reportbtn {
+    display: none;
+    position: absolute;
+    top: 12px;
+    right: 0;
+    z-index: 88;
+}
+
+.nav-icons-outr {
+    width: 175px;
+    border-radius: 5px;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #37afe7;
+}
+
+.nav-icons-outr ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-icons-outr ul li {
+    display: block;
+}
+
+.nav-icons-outr ul li a {
+    font-family: "OpenSans-Regular";
+    font-size: 14px;
+    font-weight: 400;
+    display: block;
+    color: #37afe7;
+    cursor: pointer;
+    padding-bottom: 8px;
+    text-transform: capitalize;
+}

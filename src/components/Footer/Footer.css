@@ -1,0 +1,127 @@
+.roadmap-outer {
+  width: 100vw;
+  overflow-y: hidden !important;
+
+  background: #000;
+}
+.footer-roadmap {
+  justify-content: flex-start;
+  display: flex;
+  position: relative;
+  padding-top: 50px;
+  animation-name: example;
+  animation-duration: 2s;
+  padding-bottom: 50px;
+}
+.footer-resp-size {
+  position: relative;
+  width: 1263px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+.footer-subscribe {
+  height: 50px;
+  padding-left: 40px;
+  width: 524px;
+  outline: none;
+  border: none;
+  border-radius: 8px !important;
+}
+.footer-left-detail {
+  margin: auto 0;
+}
+.footer-subscribe:focus {
+  border-color: #37afe7;
+}
+.footer-subscribe-btn {
+  width: 113px;
+  position: absolute;
+  border-radius: 8px !important;
+  height: 46px;
+  right: 2px;
+  background-color: #37afe7;
+}
+.input-group {
+  align-items: center;
+}
+.footer-bottom {
+  border-top: 2px solid #252525;
+  background-color: #000 !important;
+  text-align: center;
+  color: white !important;
+  padding: 30px 0;
+}
+.footer-copyright {
+  color: white;
+  width: 100vw;
+}
+.footer-left-detail img {
+  margin-bottom: 30px;
+}
+.footer-center-links ul li a {
+  font-size: 14px;
+  color: #ccc;
+  line-height: 39px;
+}
+.footer-center-links {
+  padding-left: 144px;
+}
+.footer-center-links h5 {
+  font-weight: 500;
+  color: #fff;
+  font-size: 18px;
+  padding-bottom: 12px;
+}
+.footer-center-links {
+  padding-top: 45px;
+}
+
+/* @keyframes example {
+  from {
+    bottom: -150px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+} */
+@media only screen and (min-width: 1264px) {
+  .footer-left-detail p {
+    padding-bottom: 21px;
+  }
+
+  .footer-center-links {
+    padding-top: 95px;
+  }
+}
+
+@media only screen and (max-width: 1264px) {
+  .footer-subscribe {
+    width: 45.9vw;
+  }
+  .footer-center-links {
+    padding-left: 15px;
+  }
+  .footer-resp-size {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .footer-roadmap {
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 15px;
+    justify-content: space-around;
+  }
+  .footer-left-detail {
+    padding-left: 15px;
+    margin-left: 0;
+  }
+  .footer-subscribe {
+    width: 100vw;
+  }
+
+  .footer-roadmap {
+  }
+}

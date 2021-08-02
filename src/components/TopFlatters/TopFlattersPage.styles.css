@@ -1,0 +1,40 @@
+.top-flatter-inner-holder {
+  display: flex;
+}
+.top-flatters-inner-holder {
+  display: flex;
+  width: 20%;
+  /* padding: 0 15px; */
+  min-width: 137px;
+  margin-bottom: 9vh;
+  margin-right: 20px;
+}
+.top-sellers-detail-holder > span {
+  font-weight: 500;
+  font-family: "Segoe UI";
+  font-weight: 700;
+  font-size: 14px;
+}
+.flatter-crown img {
+  width: 45px;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+.top-flatter-img-holder {
+  display: flex;
+  margin-top: -35px;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.flatter-stars-container {
+  width: 70px;
+  display: flex;
+  justify-content: center;
+}
+.flatter-stars {
+  width: 20px !important;
+}
+@media only screen and (min-width: 643px) {
+}
