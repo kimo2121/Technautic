@@ -26,6 +26,7 @@ const App = () => {
         <Route path="/detail" component={Detail} />
         <Route path="/topflatters" component={TopFlatters} />
         <Route path="/topsellers" component={TopSellers} />
+        <Redirect to="/" />
       </Switch>
     </Router>
   );
