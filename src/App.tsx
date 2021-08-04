@@ -19,13 +19,13 @@ const App = () => {
   return (
     <Router>
       <Switch>
-        <Route path="/" exact component={Market} />
-        <Route path="/createitem" component={CreateItem} />
-        <Route path="/createsingle" component={CreateSingle} />
-        <Route path="/profile" component={Profile} />
-        <Route path="/detail" component={Detail} />
-        <Route path="/topflatters" component={TopFlatters} />
-        <Route path="/topsellers" component={TopSellers} />
+        <Route exact path="/" exact component={Market} />
+        <Route exact path="/createitem" component={CreateItem} />
+        <Route exact path="/createsingle" component={CreateSingle} />
+        <Route exact path="/profile" component={Profile} />
+        <Route exact path="/detail" component={Detail} />
+        <Route exact path="/topflatters" component={TopFlatters} />
+        <Route exact path="/topsellers" component={TopSellers} />
         <Redirect to="/" />
       </Switch>
     </Router>
