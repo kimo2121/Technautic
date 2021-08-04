@@ -19,7 +19,7 @@ const App = () => {
   return (
     <Router>
       <Switch>
-        <Route exact path="/" exact component={Market} />
+        <Route exact path="/" component={Market} />
         <Route exact path="/createitem" component={CreateItem} />
         <Route exact path="/createsingle" component={CreateSingle} />
         <Route exact path="/profile" component={Profile} />
