@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import BurgerIcon from "../BurgerIcon.component";
 import NavBar from "../NavBar.component";
 import "./DetailPage.styles.css";
@@ -18,10 +18,6 @@ function Detail() {
   const toggle3 = (): void => {
     setOpenedDetailOrNot3(!openedDetailOrNot3);
   };
-
-  useEffect(() => {
-    Aos.init({ duration: 1400 });
-  }, []);
 
   return (
     <div className="detailPage">
