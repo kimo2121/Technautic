@@ -1,0 +1,83 @@
+.profile-outer-holder {
+    box-shadow: -1px 0 14px 0 rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+    text-align: center;
+    padding: 32px 10px;
+    margin-bottom: 90px;
+    overflow: hidden;
+}
+
+.profile-outer-holder img {
+    border-radius: 50px;
+    margin-bottom: 15px;
+}
+
+.profile-outer-holder h3 {
+    font-family: "Segoe UI";
+    font-weight: 700;
+    font-size: 24px;
+    color: #000;
+}
+
+.profile-outer-holder h3 img {
+    width: 47px;
+    margin-bottom: 10px;
+}
+
+.profile-outer-holder span {
+    font-family: "OpenSans-SemiBold";
+    font-weight: 600;
+    color: #585858;
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+
+.profile-outer-holder span img {
+    width: 29px;
+    margin-top: 10px;
+}
+
+.profile-outer-holder p {
+    font-family: "Segoe UI";
+    font-weight: 400;
+    font-size: 14px;
+    color: #737373;
+    padding-bottom: 15px;
+}
+
+.website-linke {
+    padding-bottom: 20px;
+}
+
+.btn-blue {
+    background: #add8e6;
+    color: #fff;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 35px;
+}
+
+.profile-social-icons {
+    padding-bottom: 30px;
+}
+
+.profile-icons {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-icons li {
+    display: inline-block;
+}
+
+.profile-icons a {
+    /* padding-right: 20px; */
+    font-size: 20px;
+    color: #000;
+}
+
+.middle-social-media-icon {
+    padding-left: 20px;
+    padding-right: 20px;
+}

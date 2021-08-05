@@ -1,8 +1,20 @@
-import NavBarFlatItems from "../NavBarFlatItems/NavBarFlatItems";
 import "./CreateSingle.css";
 import { ReactComponent as UploadICon } from "../../pages/assets/icons/upload.svg";
-import Footer from "../Footer/Footer";
-function Createsingle() {
+import Footer from "../../components/Footer/Footer";
+import NavBarFlatItems from "../../components/NavBarFlatItems/NavBarFlatItems";
+
+interface IType {
+  ItemDetails: {
+    title: string;
+    name: string;
+  }[];
+}
+function CreateSinglePage() {
+  const itemDetails: IType["ItemDetails"] = [
+    { title: "Name", name: "NFT Name" },
+    { title: "Descripton", name: "NFT Description" },
+    { title: "Price", name: "NFT Price" },
+  ];
   return (
     <div className="createSinglePage">
       <NavBarFlatItems CreateSingle />
@@ -40,35 +52,17 @@ function Createsingle() {
             <div className="item-detail-outer">
               <h2>Item Details</h2>
               <div className="item-name-holder">
-                <div className="form-group">
-                  <span className="input-lebel">Name:</span>
-                  <input
-                    type="text"
-                    className="create-single-form-control"
-                    placeholder="NFT Name"
-                    name="NFT Name"
-                  />
-                </div>
-              </div>
-              <div className="item-name-holder">
-                <div className="form-group">
-                  <span>Descripton:</span>
-                  <input
-                    type="text"
-                    className="create-single-form-control"
-                    placeholder="NFT Description"
-                    name="NFT Description"
-                  />
-                </div>
-              </div>
-              <div className="form-group item-size">
-                <span>Price:</span>
-                <input
-                  type="text"
-                  className="create-single-form-control"
-                  placeholder="NFT Price"
-                  name="nft-price"
-                />
+                {itemDetails.map((item, index) => (
+                  <div key={index} className="form-group">
+                    <span className="input-lebel">{item.title}:</span>
+                    <input
+                      type="text"
+                      className="create-single-form-control"
+                      placeholder={item.name}
+                      name={item.name}
+                    />
+                  </div>
+                ))}
               </div>
             </div>
             <div className="connect-acount-holder">
@@ -105,4 +99,4 @@ function Createsingle() {
   );
 }
 
-export default Createsingle;
+export default CreateSinglePage;

@@ -1,9 +1,9 @@
 import { useState } from "react";
-import BurgerIcon from "../BurgerIcon.component";
-import NavBar from "../NavBar.component";
+import BurgerIcon from "../BurgerIcon/BurgerIcon.component";
 import "./DetailPage.styles.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import NavBar from "../NavBar/NavBar.component";
 function Detail() {
   const [openedDetailOrNot1, setOpenedDetailOrNot1] = useState<boolean>(false);
   const [openedDetailOrNot2, setOpenedDetailOrNot2] = useState<boolean>(false);

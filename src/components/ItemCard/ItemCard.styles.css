@@ -1,0 +1,180 @@
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.item-card {
+  margin: 5px;
+  background: #fff;
+  border: 1px solid #37afe7;
+  border-radius: 10px;
+  position: relative;
+  padding: 10px;
+}
+
+.item-card .opening-dots {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+.item-card .like-icon {
+  position: absolute;
+  bottom: 6px;
+  right: 9px;
+}
+
+.item-card .like-icon img {
+  width: 40px;
+}
+
+.item-card .image-holder {
+  margin: 15px 0;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.item-card .image-holder img {
+  width: 100%;
+}
+
+.item-card .details-row h2 a {
+  font-family: "OpenSans-SemiBold";
+  font-size: 16px;
+  color: #000;
+}
+
+.item-card .counter {
+  color: #9a9a9a;
+}
+
+.item-card .counter span {
+  color: #39f;
+  font-size: 15px;
+}
+
+.item-card .bid-row {
+  padding-top: 10px;
+}
+
+.item-card .bid-row a {
+  padding: 5px 10px;
+  color: #37afe7;
+  font-family: "OpenSans-Regular";
+  font-weight: 400;
+  font-size: 14px;
+  border: 1px solid #37afe7;
+  border-radius: 10px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .item-card .bid-row a {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .item-card .bid-row a {
+    display: inline-block;
+  }
+}
+
+.item-card .bid-row .buy-now-btn {
+  margin-top: 20px;
+}
+
+@media only screen and (min-width: 480px) {
+  .item-card .bid-row .buy-now-btn {
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .item-card .bid-row .buy-now-btn {
+    display: block;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .item-card .bid-row .buy-now-btn {
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 1264px) {
+  .item-card {
+    margin-bottom: 15px;
+  }
+}
+
+ul.artists {
+  padding: 0;
+  display: block;
+  font-size: 0;
+}
+
+ul.artists li {
+  display: inline-block;
+  -webkit-transform: translate(-5px);
+  transform: translate(-5px);
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+ul.artists li,
+ul.artists li img {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+ul.artists li:first-child {
+  -webkit-transform: translate(0);
+  transform: translate(0);
+}
+
+.owner-detial-outer p {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.owner-detial-outer p,
+.owner-detial-outer span {
+  color: grey;
+  font-family: "OpenSans-Regular";
+  font-weight: 400;
+}
+
+.owner-detial-outer span {
+  display: block;
+  font-size: 13px;
+}
+
+.owner-detial-outer span img {
+  width: 28px;
+}
+
+.heart-icon {
+  position: absolute;
+  right: 54px;
+  bottom: 14px;
+}
+
+.item-id {
+  position: absolute;
+  top: 52px;
+  right: 18px;
+}
+
+.item-id p {
+  font-family: "OpenSans-Regular";
+  font-size: 16px;
+  position: relative;
+  font-weight: 400;
+  z-index: -1;
+  color: #39f;
+}

@@ -1,0 +1,101 @@
+.menu-btn {
+  position: absolute;
+  top: 17px;
+  right: 21px;
+  background: #fff;
+  padding: 7px;
+  border-radius: 5px;
+  display: block !important;
+  z-index: 10000;
+}
+
+@media only screen and (min-width: 1264px) {
+  .menu-btn {
+    display: none !important;
+  }
+}
+
+.sticky-header .menu-btn {
+  top: 13px;
+}
+
+.navi-icon {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  margin: 0 auto;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+.navi-icon,
+.navi-icon span {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.navi-icon span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #37afe7;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transition: 0.25s ease-in-out;
+  z-index: 9999;
+}
+
+.navi-icon span:first-child {
+  top: 0;
+}
+
+.navi-icon span:nth-child(2),
+.navi-icon span:nth-child(3) {
+  top: 8px;
+}
+
+.navi-icon span:nth-child(4) {
+  top: 16px;
+}
+
+.navi-icon.open span:first-child {
+  top: 18px;
+  width: 0;
+  left: 50%;
+}
+
+.navi-icon.open span {
+  background: #37afe7;
+}
+
+.navi-icon.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.navi-icon.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.navi-icon.open span:nth-child(4) {
+  top: 18px;
+  width: 0;
+  left: 50%;
+}
+.c-mask {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  top: 0;
+  left: 0;
+}
+.c-mask.opened {
+  z-index: 1000;
+  display: block;
+}

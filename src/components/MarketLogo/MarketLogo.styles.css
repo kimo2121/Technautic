@@ -1,0 +1,42 @@
+.logo {
+    width: 257px;
+    float: left;
+}
+
+.logo img {
+    margin-left: 40px;
+}
+
+@media only screen and (min-width: 1264px) {
+    .logo img {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .logo {
+        width: 240px;
+        margin: 10px 0;
+    }
+}
+
+@media only screen and (min-width: 1264px) {
+    .logo {
+        margin: 15px 0 10px;
+        width: 254px;
+    }
+}
+
+.logo a.transparent-logo {
+    display: block !important;
+}
+
+.logo a.white-logo {
+    display: none !important;
+}
+
+@media only screen and (min-width: 1264px) {
+    .logo {
+        margin: 15px 0 15px 23%;
+    }
+}

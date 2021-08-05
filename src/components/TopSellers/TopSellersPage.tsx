@@ -1,91 +1,12 @@
 import NavBarFlatItems from "../NavBarFlatItems/NavBarFlatItems";
 import "./TopSellersPage.styles.css";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
+
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { sellers } from "./data";
 
-const sellers: Array<any> = [
-  {
-    img: "assets/images/top-sellers-img.png",
-    name: "Pranksy",
-    amount: "37.35",
-  },
-  {
-    img: "assets/images/top-sellers-img.png",
-    name: "Pranksy",
-    amount: "37.35",
-  },
-  {
-    img: "assets/images/top-sellers-img.png",
-    name: "Pranksy",
-    amount: "37.35",
-  },
-  {
-    img: "assets/images/top-sellers-img.png",
-    name: "Pranksy",
-    amount: "37.35",
-  },
-  {
-    img: "assets/images/top-sellers-img.png",
-    name: "Pranksy",
-    amount: "37.35",
-  },
-  {
-    img: "assets/images/top-sellers-img.png",
-    name: "Pranksy",
-    amount: "37.35",
-  },
-  {
-    img: "assets/images/top-sellers-img.png",
-    name: "Pranksy",
-    amount: "37.35",
-  },
-  {
-    img: "assets/images/top-sellers-img.png",
-    name: "Pranksy",
-    amount: "37.35",
-  },
-  {
-    img: "assets/images/top-sellers-img.png",
-    name: "Pranksy",
-    amount: "37.35",
-  },
-  {
-    img: "assets/images/top-sellers-img.png",
-    name: "Pranksy",
-    amount: "37.35",
-  },
-  {
-    img: "assets/images/top-sellers-img.png",
-    name: "Pranksy",
-    amount: "37.35",
-  },
-  {
-    img: "assets/images/top-sellers-img.png",
-    name: "Pranksy",
-    amount: "37.35",
-  },
-  {
-    img: "assets/images/top-sellers-img.png",
-    name: "Pranksy",
-    amount: "37.35",
-  },
-  {
-    img: "assets/images/top-sellers-img.png",
-    name: "Pranksy",
-    amount: "37.35",
-  },
-  {
-    img: "assets/images/top-sellers-img.png",
-    name: "Pranksy",
-    amount: "37.35",
-  },
-  {
-    img: "assets/images/top-sellers-img.png",
-    name: "Pranksy",
-    amount: "37.35",
-  },
-];
 const TopSellers: React.FC = () => {
   useEffect(() => {
     Aos.init({ duration: 1400 });
@@ -107,17 +28,17 @@ const TopSellers: React.FC = () => {
                 <div className={`seller-number-in-list nu${index + 1}`}>
                   <span>{index + 1}</span>
                 </div>
-                <a href="top-sellers.html">
+                <Link href="top-sellers.html">
                   <img src={item.img} alt="" />
-                </a>
-                <a href="top-sellers.html">
+                </Link>
+                <Link href="top-sellers.html">
                   <div className="top-sellers-detail-holder">
                     <p className={`numb-rank-seller nu${index + 1}`}>
                       {item.name}
                     </p>{" "}
                     <span>{item.amount} BNB</span>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           ))}
