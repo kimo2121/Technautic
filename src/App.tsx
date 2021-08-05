@@ -11,9 +11,6 @@ import {
 } from "react-router-dom";
 import Detail from "./components/Detail/DetailPage";
 import TopFlatters from "./components/TopFlatters/TopFlattersPage";
-// import OwlCarousel from "react-owl-carousel";
-// import "owl.carousel/dist/assets/owl.carousel.css";
-// import "owl.carousel/dist/assets/owl.theme.default.css";
 
 const App = () => {
   return (
