@@ -3,9 +3,29 @@ import { Link } from "react-router-dom";
 import "./NavBar.styles.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
+
 interface IProps {
   openNavBar?: boolean;
 }
+
+interface ITypes {
+  Links: {
+    title: string;
+    to: string;
+  }[];
+}
+
+const links: ITypes["Links"] = [
+  { title: "Address", to: "/" },
+  { title: "My Profile", to: "/profile" },
+  { title: "Explore", to: "/" },
+  { title: "Activity", to: "/" },
+  { title: "Flat Token", to: "/" },
+  { title: "Top Flatters", to: "/topflatters" },
+  { title: "Subscribe", to: "/" },
+  { title: "Connect Wallet", to: "/" },
+];
+
 const NavBar: React.FC<IProps> = ({ openNavBar }) => {
   useEffect(() => {
     Aos.init({ duration: 500 });
@@ -30,40 +50,11 @@ const NavBar: React.FC<IProps> = ({ openNavBar }) => {
           <span>address goes here</span>
         </div>
         <li>
-          <Link to="#">Address</Link>
-        </li>
-        <li>
-          <Link to="/profile">My Profile</Link>
-        </li>
-        <li>
-          <Link to="#" className="#">
-            Explore
-          </Link>
-        </li>
-        <li>
-          <Link to="#" className="#">
-            Activity
-          </Link>
-        </li>
-        <li>
-          <Link to="#" className="#">
-            Flat Token
-          </Link>
-        </li>
-        <li>
-          <Link to="/topflatters" className="#">
-            Top Flatters
-          </Link>
-        </li>
-        <li>
-          <Link to="#" className="#">
-            Subscribe
-          </Link>
-        </li>
-        <li>
-          <Link to="#" className="#">
-            Connect Wallet
-          </Link>
+          {links.map((item, index) => (
+            <Link key={index} to={item.to}>
+              {item.title}
+            </Link>
+          ))}
         </li>
       </ul>
     </div>

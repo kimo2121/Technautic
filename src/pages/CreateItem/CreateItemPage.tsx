@@ -1,7 +1,7 @@
-import NavBarFlatItems from "../../components/NavBarFlatItems/NavBarFlatItems";
 import "./CreateItemPage.styles.css";
 import { Link } from "react-router-dom";
 import { ReactComponent as RightArrow } from "../../pages/assets/icons/right-arrow.svg";
+import NavBarFlatItems from "../../components/NavBarFlatItems/NavBarFlatItems";
 import Footer from "../../components/Footer/Footer";
 function Createitem() {
   return (

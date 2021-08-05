@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import "./BurgerIcon.styles.css";
-import NavBar from "../NavBar/NavBar.component";
 // import NavBarSlider from "./NavBarSlider/NavBarSlider";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import NavBar from "../NavBar/NavBar.component";
 
 const BurgerIcon = () => {
   useEffect(() => {

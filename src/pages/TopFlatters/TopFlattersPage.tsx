@@ -1,112 +1,14 @@
-import BurgerIcon from "../../components/BurgerIcon/BurgerIcon.component";
-import NavBarFlatItems from "../../components/NavBarFlatItems/NavBarFlatItems";
+import NavBarFlatItems from "../NavBarFlatItems/NavBarFlatItems";
 import "./TopFlattersPage.styles.css";
 import crown from "../../pages/assets/images/crown-icon.png";
 import star from "../../pages/assets/images/stars.png";
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
+
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { flatters } from "./data";
 
-const flatters: Array<any> = [
-  {
-    img: "assets/images/top-sellers-img.png",
-    name: "Pranksy",
-    amount: "1000",
-    stars: 0,
-    crown: "1",
-  },
-  {
-    img: "assets/images/top-sellers-img.png",
-    name: "Pranksy",
-    amount: "1000",
-    stars: 0,
-    crown: "1",
-  },
-  {
-    img: "assets/images/top-sellers-img.png",
-    name: "Pranksy",
-    amount: "1000",
-    stars: 0,
-    crown: "1",
-  },
-  {
-    img: "assets/images/top-sellers-img.png",
-    name: "Pranksy",
-    amount: "1000",
-    stars: 0,
-    crown: "1",
-  },
-  {
-    img: "assets/images/top-sellers-img.png",
-    name: "Pranksy",
-    amount: "1000",
-    stars: 0,
-    crown: "1",
-  },
-  {
-    img: "assets/images/top-sellers-img.png",
-    name: "Pranksy",
-    amount: "1000",
-    stars: 3,
-    crown: "0",
-  },
-  {
-    img: "assets/images/top-sellers-img.png",
-    name: "Pranksy",
-    amount: "1000",
-    stars: 3,
-    crown: "0",
-  },
-  {
-    img: "assets/images/top-sellers-img.png",
-    name: "Pranksy",
-    amount: "1000",
-    stars: 3,
-    crown: "0",
-  },
-  {
-    img: "assets/images/top-sellers-img.png",
-    name: "Pranksy",
-    amount: "1000",
-    stars: 3,
-    crown: "0",
-  },
-  {
-    img: "assets/images/top-sellers-img.png",
-    name: "Pranksy",
-    amount: "1000",
-    stars: 3,
-    crown: "0",
-  },
-  {
-    img: "assets/images/top-sellers-img.png",
-    name: "Pranksy",
-    amount: "1000",
-    stars: 2,
-    crown: "0",
-  },
-  {
-    img: "assets/images/top-sellers-img.png",
-    name: "Pranksy",
-    amount: "1000",
-    stars: 2,
-    crown: "0",
-  },
-  {
-    img: "assets/images/top-sellers-img.png",
-    name: "Pranksy",
-    amount: "1000",
-    stars: 1,
-    crown: "0",
-  },
-  {
-    img: "assets/images/top-sellers-img.png",
-    name: "Pranksy",
-    amount: "1000",
-    stars: 1,
-    crown: "0",
-  },
-];
 const TopFlatters: React.FC = () => {
   useEffect(() => {
     Aos.init({ duration: 1400 });
@@ -136,9 +38,9 @@ const TopFlatters: React.FC = () => {
                         <img className="flatter-stars" src={star} />
                       ))}
                 </div>
-                <a href="top-sellers.html">
+                <Link href="top-sellers.html">
                   <img src={item.img} alt="" />
-                </a>
+                </Link>
               </div>
               <div>
                 <div className="top-sellers-detail-holder">

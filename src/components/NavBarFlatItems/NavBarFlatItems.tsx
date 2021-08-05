@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import BurgerIcon from "../BurgerIcon/BurgerIcon.component";
-import NavBar from "../NavBar/NavBar.component";
 
 interface IProps {
   CreateSingle?: boolean;
@@ -22,8 +21,6 @@ const NavBarFlatItems: React.FC<IProps> = ({ CreateSingle }) => {
       setOffset(window.pageYOffset);
     };
   }, []);
-
-  console.log(offset);
 
   return (
     <div className={"navbar-flat"}>

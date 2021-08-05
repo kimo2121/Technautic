@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "es6",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -24,12 +20,8 @@
     "sourceMap": true,
     "jsx": "react-jsx"
   },
-  "include": [
-    "src"
-  ],
-  "exclude": [
-    "./node_modules/**/*"
-  ],
+  "include": ["src", "../FLAT-NFT-FrontEnd/src/components/CreateSingle"],
+  "exclude": ["./node_modules/**/*"],
   "scripts": {
     "start": "react-scripts start",
     "build": "CI= react-scripts build",

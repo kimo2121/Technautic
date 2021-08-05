@@ -1,9 +1,8 @@
 import BurgerIcon from "../../components/BurgerIcon/BurgerIcon.component";
-import MarketLogo from "../../components/MarketLogo/MarketLogo.component";
-import NavBar from "../../components/NavBar/NavBar.component";
-import MarketProfileHeader from "../../components/MarketProfileHeader/MarketProfileHeader.component";
-import ProfileCard from "../../components/ProfileCard/ProfileCard.component";
 import ItemCard from "../../components/ItemCard/ItemCard.component";
+import MarketProfileHeader from "../../components/MarketProfileHeader/MarketProfileHeader.component";
+import NavBar from "../../components/NavBar/NavBar.component";
+import ProfileCard from "../../components/ProfileCard/ProfileCard.component";
 import "../../components/main.css";
 import "./ProfilePage.styles.css";
 
