@@ -1,16 +1,16 @@
-import CreateItem from "./pages/CreateItem/CreateItemPage";
-import CreateSingle from "./pages/CreateSingle/CreateSinglePage";
+import CreateItem from "./pages/CreateItemPage/CreateItemPage";
+import CreateSingle from "./pages/CreateSinglePage/CreateSinglePage";
 import Market from "./pages/MarketPage/MarketPage";
 import Profile from "./pages/ProfilePage/ProfilePage";
-import TopSellers from "./pages/TopSellers/TopSellersPage";
+import TopSellers from "./pages/TopSellersPage/TopSellersPage";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Redirect,
 } from "react-router-dom";
-import Detail from "./pages/Detail/DetailPage";
-import TopFlatters from "./pages/TopFlatters/TopFlattersPage";
+import Detail from "./pages/DetailPage/DetailPage";
+import TopFlatters from "./pages/TopFlattersPage/TopFlattersPage";
 
 const App = () => {
   return (

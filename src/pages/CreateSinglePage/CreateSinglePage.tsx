@@ -1,4 +1,4 @@
-import "./CreateSingle.css";
+import "./CreateSinglePage.css";
 import { ReactComponent as UploadICon } from "../../pages/assets/icons/upload.svg";
 import Footer from "../../components/Footer/Footer";
 import NavBarFlatItems from "../../components/NavBarFlatItems/NavBarFlatItems";
