@@ -1,5 +1,5 @@
-import BurgerIcon from "../BurgerIcon.component";
-import NavBarFlatItems from "../NavBarFlatItems/NavBarFlatItems";
+import BurgerIcon from "../../components/BurgerIcon/BurgerIcon.component";
+import NavBarFlatItems from "../../components/NavBarFlatItems/NavBarFlatItems";
 import "./TopFlattersPage.styles.css";
 import crown from "../../pages/assets/images/crown-icon.png";
 import star from "../../pages/assets/images/stars.png";

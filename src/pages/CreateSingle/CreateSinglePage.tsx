@@ -1,7 +1,7 @@
-import NavBarFlatItems from "../NavBarFlatItems/NavBarFlatItems";
+import NavBarFlatItems from "../../components/NavBarFlatItems/NavBarFlatItems";
 import "./CreateSingle.css";
 import { ReactComponent as UploadICon } from "../../pages/assets/icons/upload.svg";
-import Footer from "../Footer/Footer";
+import Footer from "../../components/Footer/Footer";
 function Createsingle() {
   return (
     <div className="createSinglePage">

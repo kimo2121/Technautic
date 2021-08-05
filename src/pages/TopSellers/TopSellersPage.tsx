@@ -1,4 +1,4 @@
-import NavBarFlatItems from "../NavBarFlatItems/NavBarFlatItems";
+import NavBarFlatItems from "../../components/NavBarFlatItems/NavBarFlatItems";
 import "./TopSellersPage.styles.css";
 import { useEffect } from "react";
 import Aos from "aos";

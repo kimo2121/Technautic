@@ -1,7 +1,7 @@
-import BurgerIcon from "../components/BurgerIcon.component";
-import MarketLogo from "../components/MarketLogo.component";
-import NavBar from "../components/NavBar.component";
-import ItemCard from "../components/ItemCard.component";
+import BurgerIcon from "../../components/BurgerIcon/BurgerIcon.component";
+import MarketLogo from "../../components/MarketLogo/MarketLogo.component";
+import NavBar from "../../components/NavBar/NavBar.component";
+import ItemCard from "../../components/ItemCard/ItemCard.component";
 import { IoSearchSharp } from "react-icons/io5";
 import './MarketPage.styles.css'
 

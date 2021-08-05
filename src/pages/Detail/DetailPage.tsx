@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import BurgerIcon from "../BurgerIcon.component";
-import NavBar from "../NavBar.component";
+import BurgerIcon from "../../components/BurgerIcon/BurgerIcon.component";
+import NavBar from "../../components/NavBar/NavBar.component";
 import "./DetailPage.styles.css";
 import Aos from "aos";
 import "aos/dist/aos.css";

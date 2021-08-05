@@ -175,4 +175,5 @@ ul.artists li:first-child {
     font-size: 16px;
     font-weight: 400;
     color: #39f;
+    z-index: -10;
 }
