@@ -1,3 +1,11 @@
+.opened {
+    display: block;
+}
+
+.closed {
+    display: none;
+}
+
 .item-card .opening-dots {
     position: absolute;
     top: 15px;
@@ -6,11 +14,9 @@
 
 .opening-dots {
     cursor: pointer;
-    position: relative;
 }
 
-.opening-dots .reportbtn {
-    display: none;
+.dots-img {
     position: absolute;
     top: 12px;
     right: 0;

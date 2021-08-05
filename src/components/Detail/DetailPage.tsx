@@ -1,8 +1,26 @@
+import { useEffect, useState } from "react";
 import BurgerIcon from "../BurgerIcon.component";
 import NavBar from "../NavBar.component";
 import './DetailPage.styles.css'
-
+import Aos from "aos";
+import "aos/dist/aos.css";
 function Detail() {
+
+  const [openedDetailOrNot1, setOpenedDetailOrNot1] = useState<boolean>(false);
+  const [openedDetailOrNot2, setOpenedDetailOrNot2] = useState<boolean>(false);
+  const [openedDetailOrNot3, setOpenedDetailOrNot3] = useState<boolean>(false)
+   
+  const toggle1 = (): void => {setOpenedDetailOrNot1(!openedDetailOrNot1)
+  };
+  const toggle2 = (): void => {setOpenedDetailOrNot2(!openedDetailOrNot2)
+  };
+  const toggle3 = (): void => {setOpenedDetailOrNot3(!openedDetailOrNot3)
+  };
+  
+  useEffect(() => {
+    Aos.init({ duration: 1400 });
+  }, []);
+
   return (
     <div className="detailPage">
       <div className="outer">
@@ -103,7 +121,7 @@ function Detail() {
                             data-toggle="collapse"
                             data-parent="#accordion"
                           >
-                            <span className="toggleCollapseOne">
+                            <span className="toggleCollapseOne" onClick={toggle1}>
                             <img src="assets/images/panel-img-con.png" alt="" />
                             <div className="panel-title-detail">
                               <p>Owners</p>
@@ -118,7 +136,7 @@ function Detail() {
                       </div>
                       <div
                         id="collapseOne"
-                        className="panel-collapse collapse in"
+                        className={`${(openedDetailOrNot1) ? 'opened' : 'closed'}`}
                       >
                         <div className="panel-body">
                           <div className="panel-body-text">
@@ -135,7 +153,7 @@ function Detail() {
                             data-toggle="collapse"
                             data-parent="#accordion"
                           >
-                            <span className="toggleCollapseTwo">
+                            <span className="toggleCollapseTwo" onClick={toggle2}>
                               <img
                                 src="assets/images/top-sellers-img-thir.png"
                                 alt=""
@@ -151,8 +169,12 @@ function Detail() {
                           </div>
                         </h4>
                       </div>
-                      <div id="collapseTwo" className="panel-collapse collapse">
-                        <div className="panel-body">
+                      <div 
+                        id="collapseTwo"
+                        className={`${(openedDetailOrNot2) ? 'opened' : 'closed'}`}
+                      >
+                        <div
+                         className="panel-body">
                           <div className="panel-body-text">
                             <p>20% of sales will go to creator</p>
                           </div>
@@ -167,7 +189,7 @@ function Detail() {
                             data-toggle="collapse"
                             data-parent="#accordion"
                           >
-                            <span className="toggleCollapseThree">
+                            <span className="toggleCollapseThree" onClick={toggle3}>
                               <img src="assets/images/panel-img-con.png" alt="" />
                               <div className="panel-title-detail">
                                 <p>Owners</p>
@@ -181,8 +203,8 @@ function Detail() {
                         </h4>
                       </div>
                       <div
-                        id="collapseThree"
-                        className="panel-collapse collapse"
+                        id="collapseOne"
+                        className={`${(false) ? 'opened' : 'closed'}`}
                       >
                         <div className="panel-body">
                           <div className="panel-body-text">

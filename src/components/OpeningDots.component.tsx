@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState } from "react";
 import './OpeningDots.styles.css';
 
 const OpeningDots = ({page}) => {
@@ -8,10 +9,16 @@ const OpeningDots = ({page}) => {
     function myMarketFunction(){
         console.log("market func")
     }
+
+    const [openedDotsOrNot, setOpenedDotsOrNot] = useState(false);
+    const openDots = (): void => {
+        setOpenedDotsOrNot(!openedDotsOrNot);
+    };
+
     return (
-        <div className="opening-dots">
-            <img src="assets/images/opening-dots.jpg" alt="" onClick={ (page === "Profile") ? myProfileFunction : myMarketFunction }/>
-            <div className="reportbtn">
+        <div className="opening-dots" onClick={openDots}>
+            <img className='dots-img' src="assets/images/opening-dots.jpg" alt="" onClick={ (page === "Profile") ? myProfileFunction : myMarketFunction }/>
+            <div className={`${(openedDotsOrNot) ? 'opened' : 'closed'}`}>
                 <div className="nav-icons-outr">
                     <ul>
                         <li>
