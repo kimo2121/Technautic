@@ -145,7 +145,7 @@ function Detail() {
                       <div
                         id="collapseOne"
                         className={`${
-                          openedDetailOrNot1 ? "opened" : "closed"
+                          openedDetailOrNot1 ? "detail-opened" : "detail-closed"
                         }`}
                       >
                         <div className="panel-body">
@@ -185,7 +185,7 @@ function Detail() {
                       <div
                         id="collapseTwo"
                         className={`${
-                          openedDetailOrNot2 ? "opened" : "closed"
+                          openedDetailOrNot2 ? "detail-opened" : "detail-closed"
                         }`}
                       >
                         <div className="panel-body">
@@ -223,9 +223,9 @@ function Detail() {
                         </h4>
                       </div>
                       <div
-                        id="collapseTwo"
+                        id="collapseThree"
                         className={`${
-                          openedDetailOrNot3 ? "opened" : "closed"
+                          openedDetailOrNot3 ? "detail-opened" : "detail-closed"
                         }`}
                       >
                         <div className="panel-body">

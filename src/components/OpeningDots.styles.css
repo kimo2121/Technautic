@@ -20,7 +20,7 @@
     position: absolute;
     top: 12px;
     right: 0;
-    z-index: 88;
+    z-index: 1;
 }
 
 .nav-icons-outr {
@@ -29,6 +29,11 @@
     padding: 10px;
     background: #fff;
     border: 1px solid #37afe7;
+    z-index: 2;
+}
+
+.item-card {
+    z-index: 1;
 }
 
 .nav-icons-outr ul {

@@ -1,340 +1,340 @@
 .panel-heading {
-  background-color: white;
+    background-color: white;
 }
 
-.opened {
-  transition: all 0.2s;
-  display: block;
-  position: relative;
-  z-index: -1;
-  margin-top: 0;
-  background-color: transparent;
+.detail-opened {
+    transition: all 0.2s;
+    display: block;
+    position: relative;
+    z-index: -1;
+    margin-top: 0;
+    background-color: transparent;
 }
 
-.closed {
-  display: block;
-  position: relative;
-  z-index: -1;
-  margin-top: -50px;
-  background-color: transparent;
-  transition: all 0.2s;
+.detail-closed {
+    display: block;
+    position: relative;
+    z-index: -1;
+    margin-top: -50px;
+    background-color: transparent;
+    transition: all 0.2s;
 }
 
 @media only screen and (min-width: 1264px) {
-  .outer {
-    padding-left: 200px;
-    position: relative;
-  }
+    .outer {
+        padding-left: 200px;
+        position: relative;
+    }
 }
 
 .custom-container {
-  max-width: 1207px;
-  margin: 0 auto;
-  padding: 0 15px;
+    max-width: 1207px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .cursor-pointer {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .detail-page-outer {
-  padding-left: 16px;
-  padding-top: 70px;
+    padding-left: 16px;
+    padding-top: 70px;
 }
 
 @media only screen and (min-width: 1264px) {
-  .detail-page-outer {
-    padding-top: 90px;
-    padding-left: 40px;
-  }
+    .detail-page-outer {
+        padding-top: 90px;
+        padding-left: 40px;
+    }
 }
 
 .clearfix:after {
-  content: "&nbsp;";
-  font-size: 0;
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
+    content: "&nbsp;";
+    font-size: 0;
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
 }
 
 .clearfix {
-  display: inline-block;
-  display: block;
+    display: inline-block;
+    display: block;
 }
 
 * html .clearfix {
-  height: 1%;
+    height: 1%;
 }
 
 .chain-container {
-  max-width: 1210px;
-  margin: 0 auto;
-  padding: 0 15px;
+    max-width: 1210px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .detail-page-left-img img {
-  margin-bottom: 70px;
-  max-width: 100%;
+    margin-bottom: 70px;
+    max-width: 100%;
 }
 
 .detail-page-right h2 {
-  font-family: "Segoe UI";
-  font-size: 24px;
-  font-weight: 700;
-  color: #000;
-  padding-bottom: 20px;
+    font-family: "Segoe UI";
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+    padding-bottom: 20px;
 }
 
 .detail-page-right .last-price p {
-  font-family: "Segoe UI";
-  font-weight: 400;
-  color: #000;
-  font-size: 18px;
+    font-family: "Segoe UI";
+    font-weight: 400;
+    color: #000;
+    font-size: 18px;
 }
 
 .detail-page-right .last-price p span {
-  font-family: "Segoe UI";
-  font-weight: 700;
-  color: #39f;
+    font-family: "Segoe UI";
+    font-weight: 700;
+    color: #39f;
 }
 
 .detail-page-right .last-price p .price-tb {
-  font-family: "Segoe UI";
-  font-weight: 700;
-  color: #000;
+    font-family: "Segoe UI";
+    font-weight: 700;
+    color: #000;
 }
 
 .nft-heading-top {
-  position: relative;
+    position: relative;
 }
 
 .nft-heading-top .nft-likes {
-  position: absolute;
-  top: -6px;
-  right: 14px;
+    position: absolute;
+    top: -6px;
+    right: 14px;
 }
 
 .nft-heading p {
-  font-family: "OpenSans-Regular";
-  font-size: 18px;
-  font-weight: 400;
+    font-family: "OpenSans-Regular";
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .nft-heading h2 {
-  position: relative;
+    position: relative;
 }
 
 .nft-heading .nft-id {
-  position: absolute;
-  top: 32px;
-  left: 110px;
+    position: absolute;
+    top: 32px;
+    left: 110px;
 }
 
 .nft-heading .nft-id p {
-  font-size: 21px;
+    font-size: 21px;
 }
 
 .nft-likes-icon {
-  padding-left: 14px;
+    padding-left: 14px;
 }
 
 .nft-likes {
-  position: absolute;
-  top: -20px;
-  right: 10px;
+    position: absolute;
+    top: -20px;
+    right: 10px;
 }
 
 @media only screen and (max-width: 990px) {
-  .nft-likes {
-    position: static;
-    top: auto;
-    right: auto;
-  }
+    .nft-likes {
+        position: static;
+        top: auto;
+        right: auto;
+    }
 }
 
 .likes-holder {
-  position: relative;
+    position: relative;
 }
 
 .detail-page-bottom {
-  padding-top: 19px;
-  padding-bottom: 15px;
-  border-radius: 8px;
-  margin-right: 20px;
+    padding-top: 19px;
+    padding-bottom: 15px;
+    border-radius: 8px;
+    margin-right: 20px;
 }
 
 .detail-page-bottom p {
-  font-family: "Segoe UI";
-  font-weight: 400;
-  color: #000;
-  font-size: 16px;
-  background: #e5e5e5;
-  padding: 10px 26px 10px 21px;
-  border-radius: 8px;
-  text-align: center;
+    font-family: "Segoe UI";
+    font-weight: 400;
+    color: #000;
+    font-size: 16px;
+    background: #e5e5e5;
+    padding: 10px 26px 10px 21px;
+    border-radius: 8px;
+    text-align: center;
 }
 
 .tabs-outer ul li a {
-  font-family: "Segoe UI";
-  font-weight: 700;
-  font-size: 14px;
-  color: #000;
-  padding-right: 13px;
+    font-family: "Segoe UI";
+    font-weight: 700;
+    font-size: 14px;
+    color: #000;
+    padding-right: 13px;
 }
 
 li .active {
-  color: red;
+    color: red;
 }
 
 .tabContent {
-  padding: 20px;
+    padding: 20px;
 }
 
 #tabContent2,
 #tabContent3,
 #tabContent4,
 #tabContent5 {
-  display: none;
+    display: none;
 }
 
 .panel-group {
-  height: 170px;
-  overflow: hidden;
-  overflow-y: auto;
+    height: 170px;
+    overflow: hidden;
+    overflow-y: auto;
 }
 
 .panel-title-img {
-  position: relative;
+    position: relative;
 }
 
 .panel-title-img img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 38px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 38px;
 }
 
 .panel-title-img .panel-title-detail {
-  padding-bottom: 10px;
-  padding-left: 65px;
+    padding-bottom: 10px;
+    padding-left: 65px;
 }
 
 .panel-title-img .panel-title-detail p,
 .panel-title-img .panel-title-detail span {
-  font-family: "Segoe UI";
-  font-weight: 600;
-  color: #8d8d8d;
-  padding-bottom: 0;
-  font-size: 14px;
+    font-family: "Segoe UI";
+    font-weight: 600;
+    color: #8d8d8d;
+    padding-bottom: 0;
+    font-size: 14px;
 }
 
 .panel-title-img .panel-title-detail span {
-  display: block;
-  position: relative;
+    display: block;
+    position: relative;
 }
 
 .panel-title-img .panel-title-detail span img {
-  margin-left: 93px;
-  width: 29px;
-  position: absolute;
-  top: 0;
-  left: 0;
+    margin-left: 93px;
+    width: 29px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .panel-body-text {
-  text-align: center;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 30px;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 30px;
 }
 
 .panel-body-text p {
-  font-family: "Segoe UI";
-  font-weight: 600;
-  font-size: 14px;
-  color: #000;
-  background: #e5e5e5;
-  padding-top: 10px;
-  padding-bottom: 10px;
+    font-family: "Segoe UI";
+    font-weight: 600;
+    font-size: 14px;
+    color: #000;
+    background: #e5e5e5;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .tab-2-offers-detail {
-  border-bottom: 1px solid #e5e5e5;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .tab-2-offers-detail p {
-  font-family: "Segoe UI";
-  font-weight: 400;
-  color: #676767;
-  font-size: 16px;
+    font-family: "Segoe UI";
+    font-weight: 400;
+    color: #676767;
+    font-size: 16px;
 }
 
 .tab-2-offers-detail p a {
-  font-family: "Segoe UI";
-  color: #00f;
+    font-family: "Segoe UI";
+    color: #00f;
 }
 
 .detail-page-actions {
-  padding-bottom: 40px;
+    padding-bottom: 40px;
 }
 
 .nopadding {
-  padding: 0 !important;
-  margin: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 .buy-now-btn-outer {
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 35px;
 }
 
 .buy-now-btn-outer a {
-  font-family: "Segoe UI";
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 14px;
-  background: #37afe7;
-  padding: 10px 30px;
-  color: #fff;
-  border-radius: 5px;
-  display: block;
-  text-align: center;
+    font-family: "Segoe UI";
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    background: #37afe7;
+    padding: 10px 30px;
+    color: #fff;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
 }
 
 @media only screen and (min-width: 768px) {
-  .buy-now-btn-outer a {
-    padding-left: 15px;
-    padding-right: 15px;
-    font-size: 12px;
-  }
+    .buy-now-btn-outer a {
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 12px;
+    }
 }
 
 @media only screen and (min-width: 992px) {
-  .buy-now-btn-outer a {
-    padding-left: 30px;
-    padding-right: 30px;
-    font-size: 14px;
-  }
+    .buy-now-btn-outer a {
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 14px;
+    }
 }
 
 @media only screen and (min-width: 768px) {
-  .buy-now-btn-outer {
-    padding-bottom: 0;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
+    .buy-now-btn-outer {
+        padding-bottom: 0;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
 }
 
 .c-mask {
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  display: none;
-  background: rgba(0, 0, 0, 0.5);
-  top: 0;
-  left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
 }
